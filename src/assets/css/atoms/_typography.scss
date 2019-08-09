@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+html,
+body{
+  font: normal 400 16px/150% 'Open Sans', sans-serif;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 1200px){
+  font: normal 400 18px/150% 'Open Sans', sans-serif;
+}
+
+h1, .h1,
+h1 a, .h1 a{
+  margin-bottom: 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: $primary;
+}
+
+h2, .h2,
+h2 a, .h2 a{
+  margin-bottom: 1rem;
+  font-family: 'Nunito', sans-serif;
+  line-height: 150%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $secondary;
+}
+
+h3, .h3,
+h3 a, .h3 a{
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p{
+  &.lead{
+    font-family: 'Nunito';
+    font-weight: 400;
+    color: #666;
+  }
+
+  a{
+    text-decoration: underline;
+  }
+}
+
+small{
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+a{
+  color: $primary;
+  transition: color 0.5s ease;
+  text-decoration: underline;
+
+  &:hover{
+    color: $secondary;
+  }
+}
+
+ul{
+  .list-inline-item:not(:last-child){
+    margin-right: 1.5rem;
+  }
+}

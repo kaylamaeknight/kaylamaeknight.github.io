@@ -1,0 +1,21 @@
+.content{
+  position: relative;
+  top: $header_height;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fcfcfc;
+  overflow: scroll;
+
+  @media screen and (min-width: 768px){
+    position: fixed;
+    left: 33%;
+    width: 67%;
+    height: calc(100vh - 70px);
+    border-left: 10px solid #fff;
+  }
+
+  article{
+    display: none;
+  }
+}
