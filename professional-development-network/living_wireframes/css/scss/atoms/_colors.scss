@@ -1,0 +1,17 @@
+$primary: #2699FB;
+$secondary: #82C6FF;
+$tertiary: #F1F8FE;
+
+$color_map: (primary: $primary, secondary: $secondary, tertiary: $tertiary);
+
+@each $key, $value in $color_map {
+  .background-#{$key}, {
+    background-color: $value;
+  }
+}
+
+@each $key, $value in $color_map {
+  .color-#{$key}, {
+    color: $value;
+  }
+}

@@ -1,0 +1,27 @@
+.portfolio-teaser{
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 70px);
+  padding: 30px;
+  background-size: cover;
+  background-color: $primary;
+  color: #fff;
+
+  h2,
+  .h2{
+    margin: 0 0 1rem;
+    color: #fff;
+  }
+
+  a{
+    color: #fff;
+  }
+
+  >div{
+    @media screen and (min-width: 768px){
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+.tag{
+  padding: 2px 15px;
+  border: 2px solid $secondary;
+  border-radius: 25px;
+}
+
+ul.tags{
+  margin: 0;
+  padding: 0;
+
+  li{
+    display: inline-block;
+    @extend .tag;
+
+    &+li{
+      margin: 1rem 0 0 1rem;
+    }
+
+    @media screen and (min-width: 768px){
+      &+li{
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+}

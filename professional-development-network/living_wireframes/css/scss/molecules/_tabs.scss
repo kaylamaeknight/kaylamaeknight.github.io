@@ -1,0 +1,10 @@
+.nav-tabs{
+  border-bottom: 1px solid $secondary;
+
+  .nav-link{
+    &.active{
+      border-color: $secondary $secondary #fff;
+      color: $primary;
+    }
+  }
+}

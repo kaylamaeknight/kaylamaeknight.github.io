@@ -1,0 +1,35 @@
+.hero{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin-top: $header_height;
+
+  &.hero-homepage{
+    height: calc(100vh - 70px);
+    background-image: url('../images/icepit2.jpg');
+
+    .bg-gradient{
+      z-index: 1;
+    }
+  }
+
+  &.hero-full{
+    height: calc(100vh - 70px);
+  }
+
+  &.hero-300{
+    height: 300px;
+  }
+
+  .bg-gradient{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+  }
+
+  *{
+    z-index: 2;
+  }
+}

@@ -1,0 +1,59 @@
+.btn{
+  padding: .25rem 1rem;
+
+  &:active,
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.btn-primary{
+    background: $primary;
+    border: 2px solid $primary;
+    color: #fff;
+    font-weight: 600;
+
+    &:hover{
+      background: $secondary;
+      border-color: $secondary;
+    }
+}
+
+.btn-secondary{
+    background: transparent;
+    border: 2px solid $primary;
+    color: $primary;
+    font-weight: 600;
+
+    &:hover{
+      background: transparent;
+      border-color: $secondary;
+      color: $secondary;
+    }
+}
+
+.btn-tertiary{
+    background: transparent;
+    border: 2px solid $secondary;
+    color: $secondary;
+    font-weight: 600;
+
+    &:hover{
+      background: $secondary;
+      border-color: $secondary;
+      color: #fff;
+    }
+}
+
+.btn-white{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+
+    &:hover{
+      background: #fff;
+      border-color: #fff;
+      color: $primary;
+    }
+}

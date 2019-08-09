@@ -1,0 +1,58 @@
+.btn{
+  border-width: 2px;
+
+  &:focus,
+  &.active{
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-primary{
+  background: $primary;
+  border-color: $primary;
+
+  &:hover,
+  &:active{
+    background: darken($primary, 10) !important;
+    border-color: darken($primary, 10) !important;
+  }
+
+  &:focus,
+  &:active:focus{
+    box-shadow: none;
+  }
+}
+
+.btn-secondary{
+  background: transparent;
+  border-color: $primary;
+  color: $primary;
+
+  &:hover,
+  &:active{
+    background: $primary !important;
+    border-color: $primary !important;
+  }
+
+  &:focus,
+  &:active:focus{
+    box-shadow: none;
+  }
+}
+
+.btn-arrow{
+  font-weight: 600;
+
+  &:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    display: inline-block;
+    margin-top: -1px;
+    margin-left: 0.75rem;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 100%;
+  }
+}

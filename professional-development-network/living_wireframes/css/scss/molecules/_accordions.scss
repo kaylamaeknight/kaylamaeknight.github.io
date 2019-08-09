@@ -1,0 +1,18 @@
+.accordion{
+  .card+.card{
+    margin-top: 2rem;
+  }
+
+  &.accordion-unstyled{
+
+    .card+.card{
+      margin-top: 1rem;
+    }
+
+    .card{
+      .card-header{
+        height: auto;
+      }
+    }
+  }
+}

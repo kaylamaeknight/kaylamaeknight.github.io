@@ -1,0 +1,26 @@
+section{
+  padding: 50px 0;
+
+  @media screen and (min-width: 544px){
+    padding: 70px 0;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  &.background-primary{
+    color: #fff;
+
+    .btn-primary{
+      background: transparent;
+      border-color: #fff;
+
+      &:hover{
+        background: #fff !important;
+        border-color: #fff !important;
+        color: $primary;
+      }
+    }
+  }
+}

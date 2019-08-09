@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+html,body{
+  font: normal 16px/150% 'Open Sans', Helvetica;
+
+  color: $primary;
+}
+
+h1,
+.h1{
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+h2,
+.h2{
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+h3,
+.h3{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p.lead{
+  line-height: 150%;
+}
+
+small,
+p.small{
+  font-size: 0.75rem;
+  line-height: 150%;
+  font-weight: inherit;
+}
+
+a{
+  color: $primary;
+}
+
+hr{
+  border-color: $tertiary;
+
+  &.dark{
+    border-color: $secondary;
+  }
+
+  &.or{
+    overflow: visible;
+    margin: 2rem 0;
+    padding: 0;
+    border: none;
+    border-top: 1px solid $secondary;
+    color: $primary;
+    text-align: center;
+
+    &:after{
+      content: 'or';
+      display: inline-block;
+      position: relative;
+      top: -14px;
+      font-size: 14px;
+      padding: 0 0.25em;
+      background: $tertiary;
+    }
+
+    &.or--white{
+      &:after{
+        background: #fff;
+      }
+    }
+  }
+}
+
+ul{
+
+  li{
+    padding: 0.25rem 0;
+  }
+
+  &.list-group{
+    .list-group-item{
+      border-color: $secondary;
+    }
+  }
+
+  &.columns-2{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 3rem;
+  }
+}

@@ -1,0 +1,38 @@
+.hero{
+  height: auto;
+  display: flex;
+  align-items: center;
+  background: url('../images/hero.png');
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 768px){
+    height: 500px;
+  }
+
+  &.hero-full{
+    min-height: calc(100vh - 250px);
+
+    @media screen and (min-width: 768px){
+      min-height: calc(100vh - 117px);
+    }
+  }
+
+  &.hero-300{
+    height: auto;
+    background-size: 75%;
+    text-align: center;
+
+    @media screen and (min-width: 768px){
+      height: 200px;
+    }
+
+    h1{
+      margin-bottom: 1rem;
+    }
+
+    p.lead{
+      margin-bottom: 0;
+    }
+  }
+}

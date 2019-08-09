@@ -1,0 +1,12 @@
+{
+  "name": "the-job-plug-wireframes",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^5.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+label{
+    font-weight: 600;
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $primary;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid $secondary;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  &::-webkit-input-placeholder {
+  color: $secondary;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+  color: $secondary;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+  color: $secondary;
+  }
+
+  &:-ms-input-placeholder {
+  color: $secondary;
+  }
+
+  &[type='search']{
+    background-image: url('../images/search.svg');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+  }
+}
+
+.form-check{
+  [type='checkbox']{
+    margin-top: 0.42rem;
+  }
+}
