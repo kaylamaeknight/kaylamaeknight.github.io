@@ -17,20 +17,20 @@ export default class Carousel extends Component {
 
     this.state = {
       images: [
-        ui001,
-        ui002,
-        ui003,
         workiva,
         vanmeter,
-        gtsb
+        gtsb,
+        ui001,
+        ui002,
+        ui003
       ],
       links: [
-        'https://www.behance.net/gallery/83369907/Daily-UI-001-Login',
-        'https://www.behance.net/gallery/83415529/Daily-UI-002-Payment-Info',
-        'https://www.behance.net/gallery/83671421/Daily-UI-003-Landing-Page',
         'https://workiva.com',
         'https://vanmeterinc.com',
-        'http://drivesmartiowa.com'
+        'http://drivesmartiowa.com',
+        'https://www.behance.net/gallery/83369907/Daily-UI-001-Login',
+        'https://www.behance.net/gallery/83415529/Daily-UI-002-Payment-Info',
+        'https://www.behance.net/gallery/83671421/Daily-UI-003-Landing-Page'
       ],
       currentIndex: 0,
       translateValue: 0
