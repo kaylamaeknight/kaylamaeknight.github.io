@@ -8,6 +8,8 @@ import ui001 from '../../assets/images/ui001.png';
 import ui002 from '../../assets/images/ui002.png';
 import ui003 from '../../assets/images/ui003.png';
 import workiva from '../../assets/images/workiva.png';
+import amplify from '../../assets/images/amplify.png';
+import foundation from '../../assets/images/foundation.png';
 import gtsb from '../../assets/images/gtsb.png';
 import vanmeter from '../../assets/images/vanmeter.png';
 
@@ -18,6 +20,8 @@ export default class Carousel extends Component {
     this.state = {
       images: [
         workiva,
+        amplify,
+        foundation,
         vanmeter,
         gtsb,
         ui001,
@@ -26,6 +30,8 @@ export default class Carousel extends Component {
       ],
       links: [
         'https://workiva.com',
+        'https://conference.workiva.com',
+        'https://kaylaknight.dev/portfolio-foundation',
         'https://vanmeterinc.com',
         'http://drivesmartiowa.com',
         'https://www.behance.net/gallery/83369907/Daily-UI-001-Login',

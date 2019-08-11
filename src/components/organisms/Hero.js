@@ -15,7 +15,7 @@ class Hero extends Component {
           <ul className="mb-5 list-unstyled list-inline">
             <li className="list-inline-item"><a href="https://www.linkedin.com/in/kaylaknight/" target="_blank"rel="noopener noreferrer" ><i className="fab fa-linkedin-in fa-lg"></i></a></li>
             <li className="list-inline-item"><a href="https://www.behance.net/kayla-knight" target="_blank" rel="noopener noreferrer"><i className="fab fa-behance fa-lg"></i></a></li>
-            <li className="list-inline-item"><a href="https://github.com/kayla-knight" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-alt fa-lg"></i></a></li>
+            <li className="list-inline-item"><a href="https://github.com/kaylamaeknight" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-alt fa-lg"></i></a></li>
           </ul>
 
           <NavLink className="btn btn-primary" to="/contact">Say Hello</NavLink>
