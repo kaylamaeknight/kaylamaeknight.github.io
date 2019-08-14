@@ -47,31 +47,6 @@
 }
 
 /**
-* Octonaut
-*/
-.bg-octonaut{
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/octonaut.svg');
-  background-repeat:  no-repeat;
-  background-position: bottom right;
-  animation: octonaut 2s alternate ease-in-out infinite;
-}
-
-@keyframes octonaut{
-  0%{
-    transform:translateY(-8px)
-  }
-  100%{
-    transform:translateY(8px)
-  }
-}
-
-/**
 * Colors
 */
 .bg-gray{

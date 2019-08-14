@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 html,
 body{
-  font: normal 400 16px/150% 'Open Sans', sans-serif;
-  color: #555;
+  font: normal 400 16px/150% 'Nunito', sans-serif;
+  color: $black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @media screen and (min-width: 1200px){
-  font: normal 400 18px/150% 'Open Sans', sans-serif;
+  font: normal 400 18px/150% 'Nunito', sans-serif;
 }
 
 h1, .h1,
@@ -44,7 +43,7 @@ p{
   &.lead{
     font-family: 'Nunito';
     font-weight: 400;
-    color: #666;
+    color: $black;
   }
 
   a{
@@ -55,6 +54,7 @@ p{
 small{
   font-size: 0.9rem;
   font-weight: 500;
+  color: $black;
 }
 
 a{
@@ -68,6 +68,12 @@ a{
 }
 
 ul{
+  &.list-unstyled{
+      li{
+        margin: 0.5rem 0;
+      }
+  }
+
   .list-inline-item:not(:last-child){
     margin-right: 1.5rem;
   }

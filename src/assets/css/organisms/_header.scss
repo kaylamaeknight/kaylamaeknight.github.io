@@ -8,32 +8,26 @@
   top: 0;
   padding: 1rem 0;
   background: #fff;
+  border-top: 1px solid rgba($primary, .1);
 
   .logo,
   .logo a{
     font-size: 1.5rem;
     letter-spacing: 2px;
     color: $primary;
+    text-decoration: none;
   }
 
   .btn{
     padding: 0.1rem 0.5rem;
   }
 
-  a{
+  .nav-link{
     text-decoration: none;
     color: #555;
 
     &:hover{
       text-decoration: none;
-    }
-  }
-
-  nav{
-    ul{
-      li{
-        margin-left: 1rem;
-      }
     }
   }
 }

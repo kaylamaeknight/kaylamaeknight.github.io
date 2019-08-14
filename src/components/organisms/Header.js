@@ -12,7 +12,7 @@ class Header extends Component {
       <HashRouter>
         <header className="header">
           <div className="container-fluid px-5 d-flex align-items-center">
-            <h1 className="logo m-0"><NavLink to="/"><strong>KAYLA</strong>KNIGHT</NavLink></h1>
+            <h1 className="logo mt-1 mb-0"><NavLink to="/"><strong>KAYLA</strong>KNIGHT</NavLink></h1>
 
             <nav className="ml-auto d-none d-sm-block">
               <ul className="list unstyled list-inline m-0 d-flex align-items-center">
