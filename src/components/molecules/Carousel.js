@@ -4,39 +4,61 @@ import Slide from '../atoms/Slide';
 import LeftArrow from '../atoms/LeftArrow';
 import RightArrow from '../atoms/RightArrow';
 
-import ui001 from '../../assets/images/ui001.png';
-import ui002 from '../../assets/images/ui002.png';
-import ui003 from '../../assets/images/ui003.png';
-import workiva from '../../assets/images/workiva.png';
-import amplify from '../../assets/images/amplify.png';
-import foundation from '../../assets/images/foundation.png';
-import gtsb from '../../assets/images/gtsb.png';
-import vanmeter from '../../assets/images/vanmeter.png';
+import workivaDesktop from '../../assets/images/workiva.png';
+import workivaMobile from '../../assets/images/workiva-mobile.png';
+
+import amplifyDesktop from '../../assets/images/amplify.png';
+import amplifyMobile from '../../assets/images/amplify-mobile.png';
+
+import foundationDesktop from '../../assets/images/foundation.png';
+import foundationMobile from '../../assets/images/foundation-mobile.png';
+
+import dailyui001Desktop from '../../assets/images/ui001.png';
+import dailyui001Mobile from '../../assets/images/ui001.png';
+
+import vanmeterDesktop from '../../assets/images/vanmeter.png';
+import vanmeterMobile from '../../assets/images/vanmeter.png';
+
+import gtsbDesktop from '../../assets/images/gtsb.png';
+import gtsbMobile from '../../assets/images/gtsb.png';
 
 export default class Carousel extends Component {
+
   constructor(props) {
     super(props)
 
     this.state = {
-      images: [
-        workiva,
-        amplify,
-        foundation,
-        vanmeter,
-        gtsb,
-        ui001,
-        ui002,
-        ui003
-      ],
-      links: [
-        'https://workiva.com',
-        'https://conference.workiva.com',
-        'https://kaylaknight.dev/portfolio-foundation',
-        'https://vanmeterinc.com',
-        'http://drivesmartiowa.com',
-        'https://www.behance.net/gallery/83369907/Daily-UI-001-Login',
-        'https://www.behance.net/gallery/83415529/Daily-UI-002-Payment-Info',
-        'https://www.behance.net/gallery/83671421/Daily-UI-003-Landing-Page'
+      sites: [
+        {
+          'desktop': workivaDesktop,
+          'mobile': workivaMobile,
+          'link': 'https://workiva.com'
+        },
+        {
+          'desktop': amplifyDesktop,
+          'mobile': amplifyMobile,
+          'link': 'https://conference.workiva.com'
+        },
+        {
+          'desktop': foundationDesktop,
+          'mobile': foundationMobile,
+          'link': 'https://kaylaknight.dev/portfolio-foundation'
+        },
+        {
+          'desktop': dailyui001Desktop,
+          'mobile': dailyui001Mobile,
+          'link': 'https://www.behance.net/gallery/83369907/Daily-UI-001-Login'
+        },
+        {
+          'desktop': vanmeterDesktop,
+          'mobile': vanmeterMobile,
+          'link': 'https://vanmeterinc.com'
+        },
+        {
+          'desktop': gtsbDesktop,
+          'mobile': gtsbMobile,
+          'link': 'http://drivesmartiowa.com'
+        }
       ],
       currentIndex: 0,
       translateValue: 0
@@ -44,13 +66,13 @@ export default class Carousel extends Component {
   }
 
   goToPrevSlide = () => {
-    // Exiting the method early if we are at the beginning of the images array.
+    // Exiting the method early if we are at the beginning of the sites array.
     // We also want to set currentIndex and translateValue, so we return
     // to the last image in the array.
     if(this.state.currentIndex === 0) {
       return this.setState({
-        currentIndex: this.state.images.length - 1,
-        translateValue: -(this.slideWidth() * (this.state.images.length - 1))
+        currentIndex: this.state.sites.length - 1,
+        translateValue: -(this.slideWidth() * (this.state.sites.length - 1))
       })
     }
 
@@ -62,10 +84,10 @@ export default class Carousel extends Component {
   }
 
   goToNextSlide = () => {
-    // Exiting the method early if we are at the end of the images array.
+    // Exiting the method early if we are at the end of the sites array.
     // We also want to reset currentIndex and translateValue, so we return
     // to the first image in the array.
-    if(this.state.currentIndex === this.state.images.length - 1) {
+    if(this.state.currentIndex === this.state.sites.length - 1) {
       return this.setState({
         currentIndex: 0,
         translateValue: 0
@@ -92,8 +114,8 @@ export default class Carousel extends Component {
           }}
         >
           {
-            this.state.images.map((image, i) => (
-              <Slide key={i} link={this.state.links[i]} image={image} />
+            this.state.sites.map((site, i) => (
+              <Slide key={i} link={site.link} desktop={site.desktop} mobile={site.mobile} />
             ))
           }
         </div>
