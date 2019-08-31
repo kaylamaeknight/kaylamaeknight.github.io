@@ -41,9 +41,12 @@
       width: 40px;
       height: 40px;
       font-size: 1.25rem;
-      color: $primary;
       cursor: pointer;
       transition: all 0.25s ease;
+
+      .fa{
+        color: $primary;
+      }
 
       &:hover{
         background: $secondary;

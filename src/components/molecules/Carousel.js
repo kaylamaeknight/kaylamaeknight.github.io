@@ -30,6 +30,11 @@ export default class Carousel extends Component {
     this.state = {
       sites: [
         {
+          'desktop': dailyui001Desktop,
+          'mobile': dailyui001Mobile,
+          'link': 'https://www.behance.net/gallery/83369907/Daily-UI-001-Login'
+        },
+        {
           'desktop': workivaDesktop,
           'mobile': workivaMobile,
           'link': 'https://workiva.com'
@@ -43,11 +48,6 @@ export default class Carousel extends Component {
           'desktop': foundationDesktop,
           'mobile': foundationMobile,
           'link': 'https://kaylaknight.dev/portfolio-foundation'
-        },
-        {
-          'desktop': dailyui001Desktop,
-          'mobile': dailyui001Mobile,
-          'link': 'https://www.behance.net/gallery/83369907/Daily-UI-001-Login'
         },
         {
           'desktop': vanmeterDesktop,

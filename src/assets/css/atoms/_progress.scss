@@ -1,0 +1,25 @@
+.progress-bar{
+  position: relative;
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  @extend .bg-gradient;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+
+  .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 6px;
+    background: $primary;
+    opacity: 0.5;
+    box-shadow: inset 1px 1px 4px rgba($white, 0.75);
+  }
+}
+
+@for $i from 1 through 100 {
+  &.w-#{$i} {
+    width: percentage($i/100);
+  }
+}

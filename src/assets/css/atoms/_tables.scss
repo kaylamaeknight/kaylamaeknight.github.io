@@ -1,0 +1,9 @@
+.table{
+  &.table-borderless{
+    th,
+    td{
+      line-height: 100%;
+      padding: 15px 0;
+    }
+  }
+}
