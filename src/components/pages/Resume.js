@@ -10,7 +10,7 @@ class Resume extends Component {
         <h1>Résumé</h1>
 
         <div className="row">
-          <div class="col-12 col-md-8 mb-3 mb-md-0">
+          <div class="col-12 col-lg-8 mb-5 mb-lg-0">
             <h2>Professional Experience</h2>
 
             <article className="mb-5">
@@ -93,7 +93,7 @@ class Resume extends Component {
             </article>
           </div>
 
-          <div className="col-12 col-md-4 pl-4">
+          <div className="col-12 col-lg-4 pl-lg-4">
 
             <h2>Design &amp; Prototyping</h2>
             <table className="table table-borderless m-0 mb-5">
@@ -193,7 +193,7 @@ class Resume extends Component {
                 <td className="w-60"><div class="progress-bar"><div class="progress w-75"></div></div></td>
               </tr>
               <tr>
-                <th className="small">Walking cats</th>
+                <th className="small">Walking Cats</th>
                 <td className="w-60"><div class="progress-bar"><div class="progress w-30"></div></div></td>
               </tr>
               <tr>
