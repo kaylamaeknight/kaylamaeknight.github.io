@@ -6,8 +6,8 @@ import Carousel from "../molecules/Carousel";
 class Home extends Component {
   render() {
     return (
-      <section id="portfolio" className="content">
-
+      <section id="portfolio" className="content bg-gradient">
+        
         <Carousel />
 
       </section>

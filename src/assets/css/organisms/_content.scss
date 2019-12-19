@@ -3,15 +3,6 @@
   top: $header_height;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background: #fcfcfc;
+  height: calc(100vh - 70px);
   overflow: auto;
-
-  @media screen and (min-width: 768px){
-    position: fixed;
-    left: 30%;
-    width: 70%;
-    height: calc(100vh - 70px);
-    border-left: 10px solid #fff;
-  }
 }

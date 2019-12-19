@@ -16,9 +16,9 @@ class Header extends Component {
 
             <nav className="ml-auto d-none d-sm-block">
               <ul className="list unstyled list-inline m-0 d-flex align-items-center">
-                <NavLink className="nav-link" to="/">Portfolio</NavLink>
-                <NavLink className="nav-link" to="/resume">Résumé</NavLink>
-                <NavLink className="nav-link btn btn-secondary ml-3" to="/contact">Contact</NavLink>
+                <li><a class="nav-link" href="https://www.linkedin.com/in/kaylaknight/" target="_blank"rel="noopener noreferrer" ><i className="fab fa-linkedin-in"></i></a></li>
+                {/* <li><a class="nav-link" href="#"><i class="fab fa-behance"></i></a></li> */}
+                <li><a class="nav-link" href="mailto:hello@kaylaknight.dev"><i class="fas fa-envelope"></i></a></li>
               </ul>
             </nav>
           </div>

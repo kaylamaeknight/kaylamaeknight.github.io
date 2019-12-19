@@ -11,9 +11,7 @@ import "./assets/css/App.scss";
 
 // Components
 import Header from "./components/organisms/Header";
-import Hero from "./components/organisms/Hero";
 import Home from "./components/pages/Home";
-import Resume from "./components/pages/Resume";
 import Contact from "./components/pages/Contact";
 
 class Main extends Component {
@@ -22,9 +20,7 @@ class Main extends Component {
       <HashRouter>
         <Header/>
         <main>
-          <Hero />
           <Route exact path="/" component={Home}/>
-          <Route path="/resume" component={Resume}/>
           <Route path="/contact" component={Contact}/>
         </main>
       </HashRouter>
