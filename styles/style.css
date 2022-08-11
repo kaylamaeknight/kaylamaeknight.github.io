@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #171717;
-  color: #000;
+  color: white;
   line-height: 1.6;
   position: relative;
   font-family: 'Roboto Mono', monospace;
@@ -35,7 +35,8 @@ body {
   top: 0;
   left: 50%;
   background: rgba(255, 255, 255, 0.1);
-  overflow: hidden; }
+  overflow: hidden;
+  transition: margin-left 0.5s linear; }
 
 .line::after {
   content: "";
@@ -81,30 +82,77 @@ body {
     top: -50%; }
   100% {
     top: 110%; } }
+header {
+  position: relative;
+  z-index: 9999;
+  color: white; }
+  header h1 {
+    font-size: 2rem; }
+  header h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase; }
+  header a {
+    line-height: 100%;
+    color: white;
+    transition: all 1s ease-in-out; }
+    header a:hover {
+      color: lightblue; }
+
 main {
   position: relative;
   z-index: 9999;
   color: white; }
-  main header h1 {
+  main h1 {
     font-size: 2rem; }
-  main header h2 {
+  main h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  main h3 {
     font-size: 1.25rem;
     text-transform: uppercase; }
-  main .content .display-1 {
-    font-family: 'Roboto Mono';
-    font-size: 4rem;
-    transition: text-shadow 1s ease-in-out; }
-    main .content .display-1:hover {
-      text-shadow: 0 0 12px rgba(173, 216, 230, 0.75); }
-  main .content ul {
+  main ul {
     margin: 0 0 0 0.75rem;
     padding: 0;
     list-style-type: '+'; }
-    main .content ul li {
+    main ul li {
       margin: 0.5rem 0;
       padding: 0 0 0 1rem; }
-  main .content a {
+  main a {
     color: white;
     transition: text-shadow 1s ease-in-out; }
-    main .content a:hover {
+    main a:hover {
       text-shadow: 0 0 24px rgba(173, 216, 230, 0.5); }
+  main .btn {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 1px; }
+  main .home,
+  main .resume {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: left .5s linear; }
+  main .home {
+    left: 0; }
+    main .home .display-1 {
+      font-family: 'Roboto Mono';
+      font-size: 4rem;
+      transition: text-shadow 1s ease-in-out; }
+      main .home .display-1:hover {
+        text-shadow: 0 0 12px rgba(173, 216, 230, 0.75); }
+  main .resume {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%; }
+
+.resume-active .line:nth-child(1) {
+  margin-left: -45%; }
+.resume-active .line:nth-child(2) {
+  margin-left: -40%; }
+.resume-active .line:nth-child(3) {
+  margin-left: 45%; }
+.resume-active .home {
+  left: -100%; }
+.resume-active .resume {
+  left: 0; }
