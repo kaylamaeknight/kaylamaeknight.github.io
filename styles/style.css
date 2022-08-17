@@ -82,6 +82,14 @@ body {
     top: -50%; }
   100% {
     top: 110%; } }
+a {
+  color: white;
+  transition: text-shadow 1s ease-in-out;
+  text-decoration: none; }
+  a:hover {
+    color: white;
+    text-shadow: 0 0 6px rgba(173, 216, 230, 0.75); }
+
 header {
   position: relative;
   z-index: 9999;
@@ -91,12 +99,6 @@ header {
   header h2 {
     font-size: 1.25rem;
     text-transform: uppercase; }
-  header a {
-    line-height: 100%;
-    color: white;
-    transition: all 1s ease-in-out; }
-    header a:hover {
-      color: lightblue; }
 
 main {
   position: relative;
@@ -117,11 +119,6 @@ main {
     main ul li {
       margin: 0.5rem 0;
       padding: 0 0 0 1rem; }
-  main a {
-    color: white;
-    transition: text-shadow 1s ease-in-out; }
-    main a:hover {
-      text-shadow: 0 0 24px rgba(173, 216, 230, 0.5); }
   main .btn {
     background: transparent;
     border: 1px solid white;

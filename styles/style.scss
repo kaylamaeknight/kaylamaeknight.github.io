@@ -99,6 +99,17 @@ body {
   }
 }
 
+a{
+  color: white;
+  transition: text-shadow 1s ease-in-out;
+  text-decoration: none;
+
+  &:hover{
+    color: white;
+    text-shadow: 0 0 6px rgba(lightblue, 75%);
+  }
+}
+
 header{
   position: relative;
   z-index: 9999;
@@ -111,16 +122,6 @@ header{
   h2{
     font-size: 1.25rem;
     text-transform: uppercase;
-  }
-
-  a{
-    line-height: 100%;
-    color: white;
-    transition: all 1s ease-in-out;
-
-    &:hover{
-      color: lightblue;
-    }
   }
 
 }
@@ -153,15 +154,6 @@ main{
     li{
       margin: 0.5rem 0;
       padding: 0 0 0 1rem;
-    }
-  }
-
-  a{
-    color: white;
-    transition: text-shadow 1s ease-in-out;
-
-    &:hover{
-      text-shadow: 0 0 24px rgba(lightblue, 50%);
     }
   }
 
