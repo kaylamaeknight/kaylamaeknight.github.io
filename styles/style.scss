@@ -3,7 +3,7 @@ body{
 }
 
 .header{
-  background-color: #e6f0f2;
+  background-color: #fff;
 }
 
 h1{
@@ -13,7 +13,7 @@ h1{
 h2{
   font-size: 1.5rem;
   font-weight: 500;
-  color:rgba(0,0,0,0.33);
+  color:rgba(0,0,0,0.5);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -24,7 +24,7 @@ h3{
   padding: 0 0 0.25rem;
   font-size: 1.25rem;
   font-weight: 700;
-  color: teal;
+  color: #673571;
 
   &:after{
     content: '';
@@ -33,7 +33,7 @@ h3{
     left: 0;
     width: 20px;
     height: 2px; 
-    background: teal;
+    background: #673571;
   }
 }
 
@@ -67,7 +67,7 @@ ul{
 
 a{
   font-weight: 600;
-  color: teal;
+  color: #A162af;
   text-decoration: none;
 }
 
