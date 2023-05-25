@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// next.config.js
+const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = nextConfig
+module.exports = {
+  assetPrefix: isProd ? '/kaylamaeknight.github.io/' : '',
+  images: {
+    unoptimized: true,
+  },
+}
