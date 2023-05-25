@@ -6,7 +6,5 @@ module.exports = {
   assetPrefix: isProd ? '/kaylamaeknight.github.io/' : '',
   images: {
     unoptimized: true,
-  },
-  trailingSlash: true,
-  output: 'export',
+  }
 }
