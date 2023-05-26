@@ -7,7 +7,7 @@ body{
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 160%;
-  color: #222;
+  color: #333;
 }
 
 .header{
@@ -44,7 +44,7 @@ h1{
   padding: 0 0 0.25rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color:#888;
+  color:#666;
   text-transform: uppercase;
   letter-spacing: 1px;
 
@@ -53,7 +53,7 @@ h1{
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: 20px;
+    width: 30px;
     height: 2px; 
     background: #888;
   }
@@ -107,7 +107,7 @@ a{
   transition: all 0.25s linear;
 
   &:hover{
-    color: hotpink;
+    color: palevioletred;
   }
 }
 
@@ -147,11 +147,25 @@ hr{
     margin-top: 2rem;
   }
 
-  background: white;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(1px);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+  border: 1px solid #eee;
+  border-left-width: 3px;
+  border-left-color: palevioletred;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.15);
 
+  .category{
+    display: block;
+    margin: 0 0 1rem;
+    color: #666;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
   figure{
     position: relative;
     background-image: url('../images/mock-browser.svg');
@@ -160,9 +174,9 @@ hr{
     margin: 0;
   
     @media screen and (min-width: 1200px) {
-      width: 600px;
-      height: 368px;
-      padding: 72px 6px 6px 8px;
+      width: 598px;
+      height: 366px;
+      padding: 72px 8px 6px 8px;
   
       & > a{
         display: block;
@@ -188,7 +202,8 @@ hr{
   }
 
   .details{
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
     font-size: 0.85rem;
     line-height: 140%;
   }
@@ -204,4 +219,22 @@ hr{
   font-size: 1.1rem;
   font-weight: 600;
   color: #555;
+}
+
+.btn{
+  padding: 0.5rem 1.25rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 16px;
+
+  &.btn-primary{
+    background-color: #673571;
+    border-color: #673571;
+
+    &:hover{
+      background-color: palevioletred;
+      border-color: palevioletred;
+    }
+  }
 }
