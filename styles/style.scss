@@ -67,16 +67,16 @@ h2{
 }
 
 h3{
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.5rem;
   padding: 0 0 0.25rem;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #673571;
 }
 
 h4{
-  margin: 0 0 1rem;
-  font-size: 1rem;
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color:#673571;
 }
@@ -141,17 +141,56 @@ hr{
   }
 }
 
-figure{
-  margin: 0;
+.portfolio-item{
 
-  img{
-    margin: 0;
+  &+.portfolio-item{
+    margin-top: 2rem;
   }
 
-  figcaption{
-    margin: 0.25rem 0 0;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+
+  figure{
+    position: relative;
+    background-image: url('../images/mock-browser.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  
+    @media screen and (min-width: 1200px) {
+      width: 600px;
+      height: 368px;
+      padding: 72px 6px 6px 8px;
+  
+      & > a{
+        display: block;
+      }
+  
+      img{
+        width: 100%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+  
+      figcaption{
+        position: absolute;
+        top: 41px;
+        left: 135px;
+        font-size: 0.6rem;
+  
+        a{
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .details{
+    margin-top: 1rem;
     font-size: 0.85rem;
-    color: #666;
+    line-height: 140%;
   }
 }
 
