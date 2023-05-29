@@ -7,7 +7,8 @@ body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 160%;
-  color: #333; }
+  color: #333;
+  overflow-x: hidden; }
 
 .header {
   background-color: #fff; }
@@ -27,27 +28,47 @@ body {
     font-size: 1.5rem;
     color: #777; }
   .header .hero {
-    padding: 3rem 0; }
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
     @media screen and (min-width: 768px) {
       .header .hero {
-        padding: 4rem 0; } }
+        padding-top: 3rem;
+        padding-bottom: 3rem; } }
     @media screen and (min-width: 1200px) {
       .header .hero {
-        padding: 6rem 0 4rem; } }
+        padding-top: 4rem;
+        padding-bottom: 3rem; } }
+    @media screen and (min-width: 1400px) {
+      .header .hero {
+        padding-top: 5rem;
+        padding-bottom: 4rem; } }
     .header .hero .lead {
       font-family: 'Alice', 'Garamond', 'Lato', Arial, Helvetica, sans-serif;
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       line-height: 150%;
       margin-bottom: 2rem;
       color: #444; }
+      @media screen and (min-width: 1200px) {
+        .header .hero .lead {
+          font-size: 1.25rem; } }
+      @media screen and (min-width: 1400px) {
+        .header .hero .lead {
+          font-size: 1.45rem; } }
     .header .hero .fa-lg {
       font-size: 1.5rem; }
     .header .hero .fa-xl {
       font-size: 1.75rem; }
   .header .character {
-    width: 100%;
-    position: absolute;
-    bottom: -41px; }
+    display: none; }
+  @media screen and (min-width: 1200px) {
+    .header .character {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: -35px; } }
+  @media screen and (min-width: 1400px) {
+    .header .character {
+      bottom: -41px; } }
 
 h1,
 h2,
@@ -160,6 +181,43 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0; }
+    @media screen and (min-width: 0) {
+      .portfolio-item figure {
+        width: 300px;
+        height: 184px;
+        padding: 36px 4px 4px 4px; }
+        .portfolio-item figure > a {
+          display: block; }
+        .portfolio-item figure img {
+          width: 100%;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px; }
+        .portfolio-item figure figcaption {
+          position: absolute;
+          top: 14px;
+          left: 70px;
+          font-size: 0.3rem; }
+          .portfolio-item figure figcaption a {
+            color: #333; } }
+    @media screen and (min-width: 544px) {
+      .portfolio-item figure {
+        width: 410px;
+        height: 251px;
+        padding: 49px 4px 4px 4px; }
+        .portfolio-item figure > a {
+          display: block; }
+        .portfolio-item figure img {
+          width: 100%;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px; }
+        .portfolio-item figure figcaption {
+          position: absolute;
+          position: absolute;
+          top: 23.5px;
+          left: 95px;
+          font-size: 0.5rem; }
+          .portfolio-item figure figcaption a {
+            color: #333; } }
     @media screen and (min-width: 1200px) {
       .portfolio-item figure {
         width: 598px;
