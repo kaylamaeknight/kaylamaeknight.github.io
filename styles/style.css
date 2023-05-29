@@ -55,9 +55,9 @@ body {
         .header .hero .lead {
           font-size: 1.45rem; } }
     .header .hero .fa-lg {
-      font-size: 1.5rem; }
-    .header .hero .fa-xl {
       font-size: 1.75rem; }
+    .header .hero .fa-xl {
+      font-size: 2rem; }
   .header .character {
     display: none; }
   @media screen and (min-width: 1200px) {
@@ -237,8 +237,8 @@ hr {
           .portfolio-item figure figcaption a {
             color: #333; } }
   .portfolio-item .details {
+    margin-top: 1rem;
     display: flex;
-    align-items: center;
     font-size: 0.85rem;
     line-height: 140%; }
 

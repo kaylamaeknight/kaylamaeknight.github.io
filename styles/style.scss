@@ -72,11 +72,11 @@ body{
     }
 
     .fa-lg{
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
 
     .fa-xl{
-      font-size: 1.75rem;
+      font-size: 2rem;
     }
   }
 
@@ -328,8 +328,8 @@ hr{
   }
 
   .details{
+    margin-top: 1rem;
     display: flex;
-    align-items: center;
     font-size: 0.85rem;
     line-height: 140%;
   }
