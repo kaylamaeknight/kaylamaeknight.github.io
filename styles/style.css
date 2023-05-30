@@ -65,7 +65,9 @@ body {
       display: block;
       width: 100%;
       position: absolute;
-      bottom: -35px; } }
+      bottom: -35px; }
+      .header .character #freepik--Robot--inject-397 {
+        cursor: pointer; } }
   @media screen and (min-width: 1400px) {
     .header .character {
       bottom: -41px; } }
