@@ -99,10 +99,14 @@ h1 {
     background: #888; }
 
 h2 {
-  margin: 0 0 0.75rem;
-  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #673571; }
+  @media screen and (min-width: 544px) {
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.75rem; } }
 
 h3 {
   margin: 0 0 0.5rem;
