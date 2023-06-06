@@ -104,6 +104,33 @@ body{
   }
 }
 
+.footer{
+  background-color: #553652;
+  color: rgba(255,255,255,0.8);
+
+  .lead{
+    margin: 0;
+    font-family: 'Alice', 'Garamond', 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.9);
+  }
+}
+
+aside{
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 135%;
+  color: rgba(0,0,0,0.75);
+
+  .fa-lg{
+    font-size: 1.65rem;
+  }
+
+  .fa-xl{
+    font-size: 2rem;
+  }
+}
+
 h1,
 h2,
 h3,
