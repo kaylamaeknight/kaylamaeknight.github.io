@@ -254,6 +254,7 @@ hr {
   letter-spacing: 1px;
 }
 .portfolio-item figure {
+  overflow: hidden;
   position: relative;
   background-image: url("../images/mock-browser.svg");
   background-repeat: no-repeat;

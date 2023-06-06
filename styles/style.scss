@@ -274,6 +274,7 @@ hr{
   }
   
   figure{
+    overflow: hidden;
     position: relative;
     background-image: url('../images/mock-browser.svg');
     background-repeat: no-repeat;
